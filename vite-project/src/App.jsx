@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './components/Header'
 
+// import {Header} from './components/Header'  //  for named export 
+
 
 
 function App() {
@@ -13,4 +15,5 @@ function App() {
   )
 }
 
+export default  Header;
 
