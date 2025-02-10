@@ -3,3 +3,6 @@ inorder to create a vite prj ->  npm create vite@latest
 to run it -> cd vite-project
              npm install 
              npm run dev 
+
+
+nesting of comp -> putting code of one comp in another comp              
