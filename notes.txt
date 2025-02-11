@@ -6,3 +6,23 @@ to run it -> cd vite-project
 
 
 nesting of comp -> putting code of one comp in another comp              
+
+props - are used to transfer the data from one comp to another comp in an application ( typically from parent comp to child comp's)
+       helps diff components of the app to talk to eachother 
+       reuse comp with diff data/info  
+       props = properties of the comp
+
+ex:
+
+function ParentComponent(){
+<ChildComponent lunchBox='roti' drink='jira' />   / passing data 
+}
+
+function ChildComponent(props){                   / reciving data inside child and using it further 
+}
+
+
+/////////////////////////////// remove ai extension in vs code 
+
+
+profile and avatar --> reuse comp with diff data/info  ( reusing avatar comp for rendring multiple diff data ) 
