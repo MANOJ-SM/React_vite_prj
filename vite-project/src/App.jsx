@@ -1,5 +1,7 @@
 import './App.css'
 import Header from './components/Header'
+import ParentComponent from './components/ParentComponent';
+import ChildComponent from './components/ChildComponent';
 
 // import {Header} from './components/Header'  //  for named export 
 
@@ -7,13 +9,12 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <>
+    <>  
+     <Header/>
      <h1>hello</h1>
-     <Header />
-     {/* <Header />   or {Header()} */}
     </>
   )
 }
 
-export default  Header;
+export default  App;
 
