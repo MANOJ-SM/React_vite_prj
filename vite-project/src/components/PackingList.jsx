@@ -48,6 +48,8 @@ function PackingList(){
     function handleClick(){
         alert("hey i am clicked");
     }
+
+    // onMouseHover = handleMouseHover
     return (
         <>
         <h1>list of Packing Items</h1>
@@ -64,6 +66,13 @@ function PackingList(){
             }
             
             <button onClick={handleClick} >i am a button </button>
+            <button onClick={ function handleClick(){
+                alert("heyy");
+            }} >button</button>
+
+            <button onClick={ () => {
+                alert("heyy from Arrow function");
+            }}> Arrow button</button>
         </>
     )
 }
