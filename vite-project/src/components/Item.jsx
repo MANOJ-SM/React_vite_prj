@@ -14,9 +14,9 @@
 
 // export default Item;
 
-/*
 
-comnditionally render the items with null 
+
+// comnditionally render the items with null 
 
 function Item(props){
     if(props.isPacked){
@@ -32,16 +32,26 @@ function Item(props){
 
 export default Item;
 
-*/
 
 
+// conditional ternery operator
 
-// conditional terrnoruy operator
+// function Item(props){
+//     return <li> { props.isPacked ? props.name + " ✓" : props.name } </li>;
+// }
 
-function Item(props){
-    return  <li> { props.isPacked ? props.name + "✓" : props.name } </li>;
+// export default Item;
 
-}
 
-export default Item;
+// logical and   -> &&
 
+// function Item(props){
+//     return (
+//         <li>
+//             {props.name}
+//             {props.isPacked && "✓"}
+//         </li>
+//     )
+// }
+
+// export default Item;
