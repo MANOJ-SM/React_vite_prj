@@ -15,7 +15,7 @@ function App() {
      <h1>hello</h1>
      <ParentComponent/>
      <Profile/> */}
-     <PackingList/>
+     <PackingList  msg="react" />
     </>
   )
 }

@@ -43,10 +43,10 @@ const items = [
 ];
 
 
-function PackingList(){
+function PackingList(props){
 
     function handleClick(){
-        alert("hey i am clicked");
+        alert(" props recived from parent component");
     }
 
     // onMouseHover = handleMouseHover
@@ -65,7 +65,8 @@ function PackingList(){
                 })
             }
             
-            <button onClick={handleClick} >i am a button </button>
+            <button onClick={handleClick} >props button </button>  
+             
             <button onClick={ function handleClick(){
                 alert("heyy");
             }} >button</button>
@@ -73,6 +74,8 @@ function PackingList(){
             <button onClick={ () => {
                 alert("heyy from Arrow function");
             }}> Arrow button</button>
+
+            
         </>
     )
 }
