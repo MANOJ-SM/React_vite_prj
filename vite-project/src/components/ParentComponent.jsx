@@ -1,7 +1,10 @@
+import ChildComponent from "./ChildComponent";
+
 function ParentComponent(){
-    retrun (
+    return (
         <>
         <h1>ParentComponent</h1>
+        <ChildComponent lunchBox='roti' drink='jira' />
         </>
     )
 };
