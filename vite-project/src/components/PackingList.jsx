@@ -44,6 +44,10 @@ const items = [
 
 
 function PackingList(){
+
+    function handleClick(){
+        alert("hey i am clicked");
+    }
     return (
         <>
         <h1>list of Packing Items</h1>
@@ -56,9 +60,10 @@ function PackingList(){
 
             {  items.map( item => {
                 return <Item  key={item.id}  data = {item} />   // item.id -> to track each item in list 
-            })
+                })
             }
-
+            
+            <button onClick={handleClick} >i am a button </button>
         </>
     )
 }

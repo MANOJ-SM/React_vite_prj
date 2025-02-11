@@ -26,3 +26,6 @@ function ChildComponent(props){                   / reciving data inside child a
 
 
 profile and avatar --> reuse comp with diff data/info  ( reusing avatar comp for rendring multiple diff data ) 
+
+
+event handling - in response to any event when you want to calll an function 
