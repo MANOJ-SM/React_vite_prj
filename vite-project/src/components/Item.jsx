@@ -18,19 +18,19 @@
 
 // comnditionally render the items with null 
 
-function Item(props){
-    if(props.isPacked){
-        return (
-            <>
-            <li>{props.name} ✓ </li>
-            </>
-        );
-    }else {
-        return <li>{props.name}</li>
-    }
-}
+// function Item(props){
+//     if(props.isPacked){
+//         return (
+//             <>
+//             <li>{props.name} ✓ </li>
+//             </>
+//         );
+//     }else {
+//         return <li>{props.name}</li>
+//     }
+// }
 
-export default Item;
+// export default Item;
 
 
 
@@ -55,3 +55,18 @@ export default Item;
 // }
 
 // export default Item;
+
+
+// rendring  items through array of obj's
+
+function Item(props){
+    return (
+        <li>
+            {props.data.name}
+            {props.data.isPacked && "✓"}
+        </li>
+    )
+}
+
+export default Item;
+

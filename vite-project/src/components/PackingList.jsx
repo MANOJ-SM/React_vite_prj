@@ -47,14 +47,18 @@ function PackingList(){
     return (
         <>
         <h1>list of Packing Items</h1>
+
             {/* <Item  name="clothes" isPacked={false}/>
             <Item  name="watch" isPacked={true} />
             <Item  name="sunglases" isPacked={false} />
             <Item  name="moisture" isPacked={true}/> */}
+
+
             {  items.map( item => {
-                return <Item  data={item} />
+                return <Item  key={item.id}  data = {item} />   // item.id -> to track each item in list 
             })
             }
+
         </>
     )
 }
